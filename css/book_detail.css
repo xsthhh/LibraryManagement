@@ -1,0 +1,19 @@
+span{
+	font-weight: bold;
+}
+.book_img{
+	width: 15%;
+	margin-top: 3%;
+	float: left;
+
+}
+.book_basic{
+	background: #F0E68C;
+	width: 90%;
+	height: 400px;
+	margin: 5% 5% 0 5%;
+}
+.book_basic_info{
+	margin-left: 5%;
+	float: right;
+}
