@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>图书馆-还书</title>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/borrow-return.css">
+	</head>
+	<body>
+	  <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" id="progressbar">
+          </div>
+       </div>
+	  <center>
+         <div class="title">还书</div>    
+       </center>
+       <div class="container"> 
+         <div class="tip" id="tip-1">请选择归还数量:</div> 
+         
+         <select class="select-style" id="selectbar">
+           <option value ="1本">1本</option>
+           <option value ="2本">2本</option>
+           <option value="3本">3本</option>
+           <option value="4本">4本</option>
+        </select> 
+       </div>
+      <center>
+        <!-- second step -->
+        <div class="tip-2" id="tip-2">请输入图书条形码号</div>
+        <!-- third step -->
+        <div class="tip-2" id="tip-3">您归还的图书</div>
+        <!-- forth step -->
+         <div class="tip-2" id="tip-4">归还成功！</div>
+        <!-- codebar 1 -->
+        <div class="input-group codebar" id="codebar-1">
+            <input type="text" class="form-control" placeholder="条形码号">
+        </div>
+        <!-- codebar 2 -->
+        <div class="input-group codebar" id="codebar-2">
+            <input type="text" class="form-control" placeholder="条形码号">
+        </div>
+        <!-- codebar 3 -->
+        <div class="input-group codebar" id="codebar-3">
+            <input type="text" class="form-control" placeholder="条形码号">
+        </div>
+        <!-- codebar 4 -->
+        <div class="input-group codebar" id="codebar-4">
+            <input type="text" class="form-control" placeholder="条形码号">
+        </div>
+        <table class="table table-hover my-table">
+        <thead>
+          <tr>
+               <th>图书条形码</th>
+               <th>图书名称</th>
+               <th>图书作者</th>
+               <th>借出日期</th>
+               <th>归还日期</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="msg-1">
+               <td>978-7-115-43978-9</td>
+               <td>Android:第一行代码</td>
+               <td>郭霖</td>
+               <td>2017-12-10</td>
+               <td>2017-12-31</td>
+          </tr>
+          <tr id="msg-2">
+               <td>978-7-115-43978-9</td>
+               <td>Android:第一行代码</td>
+               <td>郭霖</td>
+               <td>2017-12-10</td>
+               <td>2017-12-31</td>
+          </tr>
+          <tr id="msg-3">
+               <td>978-7-115-43978-9</td>
+               <td>Android:第一行代码</td>
+               <td>郭霖</td>
+               <td>2017-12-10</td>
+               <td>2017-12-31</td>
+          </tr>
+          <tr id="msg-4">
+               <td>978-7-115-43978-9</td>
+               <td>Android:第一行代码</td>
+               <td>郭霖</td>
+               <td>2017-12-10</td>
+               <td>2017-12-31</td>
+          </tr>
+        </tbody>
+        </table>
+        <!-- first step -->
+        <button type="button" class="btn btn-primary my-btn" id="first-step">下一步</button>
+        <!-- second step -->
+        <div class="btn-container">
+          <button type="button" class="btn btn-warning my-btn my-btn-se" id="second-stepback">返回</button>
+          <button type="button" class="btn btn-primary my-btn my-btn-se" id="second-step">下一步</button>
+          <!-- third step -->
+          <button type="button" class="btn btn-warning my-btn my-btn-se" id="third-stepback">返回</button>
+          <button type="button" class="btn btn-primary my-btn my-btn-se" id="third-step">完成</button>
+        </div>
+        <!-- forth step -->
+        <button type="button" class="btn btn-warning my-btn" id="forth-step">返回个人中心</button>
+      </center>
+	</body>
+	<script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/borrow-return.js"></script>
+</html>

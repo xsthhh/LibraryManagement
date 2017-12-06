@@ -1,0 +1,64 @@
+body {
+	background: url(img/bg.png);
+	background-size: cover;
+	font-family: "微软雅黑";
+}
+.title {
+	margin-top: 5%;
+	font-size: 50px;
+    font-weight: 900;
+	color: #45331b;
+}
+.container {
+    margin-top: 3%;  
+    display: flex;
+    flex-direction: row;
+}
+/*借阅提示*/
+.tip {
+	margin-top: 3%;
+	margin-left: 20%;
+	font-size: 34px;
+    font-weight: 900;
+	color: black;
+}
+.tip-2 {
+	font-size: 34px;
+    font-weight: 900;
+	color: black;
+}
+.select-style {
+	margin-top: 3%;
+	margin-left: 5%;
+	width: 30%;
+	font-size: 28px;
+    font-weight: 900;
+}
+.my-btn {
+	margin-top: 5%;
+	width: 25%;
+    font-size: 22px;
+    font-weight: 900;
+}
+/*条形码输入框*/
+.codebar {
+	margin-top: 3%;
+	margin-bottom: -1%;
+	width: 35%;
+    font-weight: 700;
+}
+.btn-container {
+	width: 40%;
+	display: flex;
+    flex-direction: row;
+}
+/*第二组按钮*/
+.my-btn-se {
+    margin-left: 15%;
+    margin-top: 8%;
+}
+/*图书表格*/
+.my-table {
+	width: 80%;
+	font-size: 20px;
+}
