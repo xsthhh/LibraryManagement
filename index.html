@@ -1,110 +1,106 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>图书馆-还书</title>
-		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/borrow-return.css">
-	</head>
-	<body>
-	  <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" id="progressbar">
-          </div>
-       </div>
-	  <center>
-         <div class="title">还书</div>    
-       </center>
-       <div class="container"> 
-         <div class="tip" id="tip-1">请选择归还数量:</div> 
-         
-         <select class="select-style" id="selectbar">
-           <option value ="1本">1本</option>
-           <option value ="2本">2本</option>
-           <option value="3本">3本</option>
-           <option value="4本">4本</option>
-        </select> 
-       </div>
-      <center>
-        <!-- second step -->
-        <div class="tip-2" id="tip-2">请输入图书条形码号</div>
-        <!-- third step -->
-        <div class="tip-2" id="tip-3">您归还的图书</div>
-        <!-- forth step -->
-         <div class="tip-2" id="tip-4">归还成功！</div>
-        <!-- codebar 1 -->
-        <div class="input-group codebar" id="codebar-1">
-            <input type="text" class="form-control" placeholder="条形码号">
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Library</title>
+<meta name="description" content="图书馆">
+<meta name="keywords" content="图书馆">
+<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+<script type="text/javascript"  src="lib/jquery.js"></script>
+<script type="text/javascript"  src="js/homepage.js"></script>
+
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+    	
+    	<div class="nav navbar-nav">
+       		<a class="navbar-brand" href="#"><img class="home-logo" src="img/logo.png"></a>
+    	</div>
+    	<div class="nav navbar-nav">
+    		<a class="navbar-brand" href="#">
+    			<div class="home-head-china-div"><font class="home-head-china">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</font></div>
+    			<font class="home-head-english">HOMEPAGE</font>
+    		</a>
+    	</div>
+    	<div class="nav navbar-nav">
+    		<a class="navbar-brand" href="#">
+    			<div class="home-head-china-div"><font class="home-head-china">个人信息</font></div>
+    			<font class="home-head-english">PERSONAL</font>
+    		</a>
+    	</div>
+    	<div class="nav navbar-nav">
+    		<a class="navbar-brand" href="#">
+    			<div class="home-head-china-div"><font class="home-head-china">资&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;源</font></div>
+    			<font class="home-head-english">RESOURCES</font>
+    		</a>
+    	</div>
+    	<div class="nav navbar-nav">
+    		<a class="navbar-brand" href="#">
+    			<div class="home-head-china-div"><font class="home-head-china">概&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;况</font></div>
+    			<div><font class="home-head-english">OVERVIEW</font></div>
+    		</a>
+    	</div>
+    	<div class="nav navbar-nav">
+    		<a class="navbar-brand" href="#">
+    			<div class="home-head-china-div"><font class="home-head-china">服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</font></div>
+    			<font class="home-head-english">SERVICES</font>
+    		</a>
+    	</div>
+
+		<div class="nav navbar-nav head-login">
+    	<div class="home-head-search">
+        	<form action="" id="head-search-title-form">
+         		<input type="text" id="head-search-text"  name="query" placeholder="站内搜索" maxlength="50" />
+         		<input type="submit" id="head-search-i" name="" value="&nbsp;" >
+         		<a href="" class="head-search-a"><i class="fa fa-search"></i></a>
+        	</form> 
+    	</div>
+        <div class="head-login-way">
+            <a href="#" class="head-weixin"><img src="img/wechat.png">
+            </a>
+            <a href="" class="head-weibo"><img src="img/weibo.png">
+            </a>
+            <a href="" class="head-else">其他</a>
+
         </div>
-        <!-- codebar 2 -->
-        <div class="input-group codebar" id="codebar-2">
-            <input type="text" class="form-control" placeholder="条形码号">
         </div>
-        <!-- codebar 3 -->
-        <div class="input-group codebar" id="codebar-3">
-            <input type="text" class="form-control" placeholder="条形码号">
-        </div>
-        <!-- codebar 4 -->
-        <div class="input-group codebar" id="codebar-4">
-            <input type="text" class="form-control" placeholder="条形码号">
-        </div>
-        <table class="table table-hover my-table">
-        <thead>
-          <tr>
-               <th>图书条形码</th>
-               <th>图书名称</th>
-               <th>图书作者</th>
-               <th>借出日期</th>
-               <th>归还日期</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr id="msg-1">
-               <td>978-7-115-43978-9</td>
-               <td>Android:第一行代码</td>
-               <td>郭霖</td>
-               <td>2017-12-10</td>
-               <td>2017-12-31</td>
-          </tr>
-          <tr id="msg-2">
-               <td>978-7-115-43978-9</td>
-               <td>Android:第一行代码</td>
-               <td>郭霖</td>
-               <td>2017-12-10</td>
-               <td>2017-12-31</td>
-          </tr>
-          <tr id="msg-3">
-               <td>978-7-115-43978-9</td>
-               <td>Android:第一行代码</td>
-               <td>郭霖</td>
-               <td>2017-12-10</td>
-               <td>2017-12-31</td>
-          </tr>
-          <tr id="msg-4">
-               <td>978-7-115-43978-9</td>
-               <td>Android:第一行代码</td>
-               <td>郭霖</td>
-               <td>2017-12-10</td>
-               <td>2017-12-31</td>
-          </tr>
-        </tbody>
-        </table>
-        <!-- first step -->
-        <button type="button" class="btn btn-primary my-btn" id="first-step">下一步</button>
-        <!-- second step -->
-        <div class="btn-container">
-          <button type="button" class="btn btn-warning my-btn my-btn-se" id="second-stepback">返回</button>
-          <button type="button" class="btn btn-primary my-btn my-btn-se" id="second-step">下一步</button>
-          <!-- third step -->
-          <button type="button" class="btn btn-warning my-btn my-btn-se" id="third-stepback">返回</button>
-          <button type="button" class="btn btn-primary my-btn my-btn-se" id="third-step">完成</button>
-        </div>
-        <!-- forth step -->
-        <button type="button" class="btn btn-warning my-btn" id="forth-step">返回个人中心</button>
-      </center>
-	</body>
-	<script type="text/javascript" src="lib/jquery.js"></script>
-	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/borrow-return.js"></script>
+
+    	<div class="nav navbar-nav home-mylibrary">
+    			<div class="head-mylibrary-china head-mylibrary-width-full">我的图书馆</div>
+    			<div class="head-mylibrary-english head-mylibrary-width-full">MY LIBRARY</font>
+    			<div class="head-hello-login head-mylibrary-width-full">您好，请登录！</div>
+    			<div class="head-secret-query head-mylibrary-width-full">
+    				<div class="head-forget-secret head-mylibrary-width-full">账号注册</div>
+    				<div class="head-query-num head-mylibrary-width-full" onclick="window.location.href='login.html'">账号登录</div>
+    			</div>
+    	</div>
+    </div>
+</nav>
+<div class="home-serach">
+	<div class="search-items">
+		<button class="search-books search-items-common">找图书</button>
+		<button class="search-news search-items-common">找期刊</button>
+		<button class="search-com search-items-common">综合检索</button>
+		<button class="search-scholar search-items-common">检索学术</button>
+	</div>
+	<div>
+		<form action="" class="search-input">
+         		<input type="text"  name="query" placeholder="输入关键字"  />
+         		<input type="submit" class="search-input-select" name="" value="检索" >
+        	</form> 
+	</div>
+</div>
+
+
+
+
+
+ 
+    
+</body>
 </html>
