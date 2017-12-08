@@ -147,3 +147,6 @@
 	color: white;
 	border: 0;
 }
+#login-btn,#register-btn:hover {
+   cursor: pointer;
+}
