@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>图书馆-续借</title>
-		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/borrow-return.css">
-	</head>
-	<body>
-	  <div class="progress">
-          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" id="progressbar">
-          </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>图书馆-续借</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/borrow-return.css">
+  </head>
+  <body>
+    <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" id="progressbar-renew">
+          Step 1 : 选择续借数量</div> 
+          <div id="next-step-renew">Next Step : 输入图书条形码</div>
        </div>
-	  <center>
+    <center>
          <div class="title">续借</div>    
        </center>
        <div class="container"> 
@@ -35,19 +36,23 @@
          <div class="tip-2" id="tip-4">续借成功！</div>
         <!-- codebar 1 -->
         <div class="input-group codebar" id="codebar-1">
-            <input type="text" class="form-control" placeholder="条形码号">
+            <input type="text" class="form-control" placeholder="条形码号" id="codebar-input-1" >
+            <div id="book_name1">《Android:第一行代码》--郭霖</div>
         </div>
         <!-- codebar 2 -->
         <div class="input-group codebar" id="codebar-2">
-            <input type="text" class="form-control" placeholder="条形码号">
+            <input type="text" class="form-control" placeholder="条形码号" id="codebar-input-2">
+             <div id="book_name2">《Android:第一行代码》--郭霖</div>
         </div>
         <!-- codebar 3 -->
         <div class="input-group codebar" id="codebar-3">
-            <input type="text" class="form-control" placeholder="条形码号">
+            <input type="text" class="form-control" placeholder="条形码号" id="codebar-input-3">
+            <div id="book_name3">《Android:第一行代码》--郭霖</div>
         </div>
         <!-- codebar 4 -->
         <div class="input-group codebar" id="codebar-4">
-            <input type="text" class="form-control" placeholder="条形码号">
+            <input type="text" class="form-control" placeholder="条形码号" id="codebar-input-4">
+            <div id="book_name4">《Android:第一行代码》--郭霖</div>
         </div>
         <table class="table table-hover my-table">
         <thead>
@@ -107,9 +112,11 @@
         </div>
         <!-- forth step -->
         <button type="button" class="btn btn-warning my-btn" id="forth-step">返回个人中心</button>
+        <!-- <div class="tip_num" id="tip_num">**您最多可借阅10本图书，当前已借阅6本。最多可再借阅4本图书！</div> -->
       </center>
-	</body>
-	<script type="text/javascript" src="lib/jquery.js"></script>
-	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/borrow-return.js"></script>
+  </body>
+  <script type="text/javascript" src="lib/jquery.js"></script>
+  <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/borrow-return.js"></script>
 </html>
+
