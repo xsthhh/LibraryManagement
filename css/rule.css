@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-12-10 17:40:49
+ * @version $Id$
+ */
+ body {
+ 	background: url(img/bg.png);
+ 	background-size: cover;
+ }
+.home-rule{
+	width: 80%;
+	background-color: #ffffff;
+	position: relative;
+	left: 10%;
+	padding: 2%;
+	margin-bottom: 2%;
+}
+.rule-content {
+	border: 5px solid #cccccc;
+	padding: 2% 2% 2% 2%;
+}
+.rule-reader {
+	float: right;
+	font-weight: bold;
+	color: #c6341a;
+}
+.rule-text {
+	padding-bottom: 5%;
+}
+.rule-text p {
+	line-height: 1.75em; 
+	text-indent: 2em; 
+	font-family: 宋体, SimSun; 
+	font-size: 1.2em;
+}
+.rule-title {
+	text-align: center;
+	line-height: 1.75em; 
+	font-family: 宋体, SimSun; 
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.home-bottom {
+	padding-top: 3%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	background-color: #f1f9fd;
+	padding-bottom: 2%;
+}
+.buttom-title {
+	padding-left: 2%;
+}
