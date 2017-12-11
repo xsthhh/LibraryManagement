@@ -1,19 +1,47 @@
+body{
+	background: #FFFACD;
+}
+.return{
+	width: 4%;
+	height: 4%;
+	margin:1% 0 0 2%;
+	cursor: pointer;
+}
+
 span{
 	font-weight: bold;
+}
+h3{
+	margin-bottom: 12%;
 }
 .book_img{
 	width: 15%;
 	margin-top: 3%;
-	float: left;
+	margin-right: 7%;
+	float: right;
 
 }
 .book_basic{
 	background: #F0E68C;
 	width: 90%;
-	height: 400px;
-	margin: 5% 5% 0 5%;
+	height: 300px;
+	margin: 1% 5% 0 5%;
 }
 .book_basic_info{
 	margin-left: 5%;
-	float: right;
+	float: left;
+}
+.book_intro{
+	background: #F0E68C;
+	width: 90%;
+	height: 400px;
+	margin: 0 5% 5% 5%;
+	padding-left: 4.4%;
+	padding-right: 4.3%;
+	padding-bottom: 35%;
+}
+table{
+	width: 100%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
