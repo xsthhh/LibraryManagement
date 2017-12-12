@@ -92,6 +92,7 @@
  	display: flex;
  	flex-wrap: wrap;
  	text-align: center;
+ 	padding-top: 1%;
  }
  .head-mylibrary-width-full {
  	width: 100%;
@@ -105,7 +106,7 @@
  }
  .head-hello-login {
  	font-size: 0.8em;
- 	padding: 1% 0 1% 2%;
+ 	padding: 1% 0 10% 2%;
  }
  .head-secret-query {
  	display: flex;
@@ -118,33 +119,32 @@
 
 
  .home-serach {
- 	margin-top: 10%;
+ 	margin-top: 15%;
+ 	padding: 0 35% 0 35%;
  }
  .search-items {
  	display: flex;
  	justify-content: center;
  }
  .search-items-common {
+ 	width: 25%;
  	font-size: 1.5em;
  	font-weight: bolder;
  	color: white;
- 	margin: 0 1% 0 1%;
- 	padding: 0.5% 1% 0.5% 1%;
  }
  button {
-    background: transparent;
-    border: 0;
-}
-.search-input {
- 	border-top: 3px solid #c6341a;
- 	width: 35.8%;
- 	padding-top: 1.5%;
- 	padding-bottom: 1.5%;
+ 	background: transparent;
+ 	border: 0;
+ 	outline: none;
+ }
+ .search-input {
+ 	border-top: 5px solid #c6341a;
+ 	padding-top: 4%;
+ 	padding-bottom: 4%;
  	display: flex;
  	justify-content: center;
  	font-size: 1.5em;
  	position: relative;
- 	left: 32.1%;
  	background-color: #f1eee9;
  }
  .search-input-select {
@@ -153,7 +153,7 @@
  	color: white;
  	border: 0;
  }
-  .search-books {
+ .search-books {
  	background-color: #c6341a;
  }
 
