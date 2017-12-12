@@ -277,4 +277,5 @@ function init() {
             $("#book_name4").hide();
          }
     });
+
 }
