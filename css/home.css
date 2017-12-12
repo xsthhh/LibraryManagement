@@ -166,7 +166,7 @@
 
  .home-center {
  	transform: scale(0.9);
- 	margin: 3% 2% 2% 2%;
+ 	margin: 3% 5% 2% 5%;
  	padding: 1.5% 0 1.5% 0.5%;
  	display: flex;
  	flex-wrap: nowrap;
@@ -183,7 +183,7 @@
  	float: left;
  }
  .home-center-right {
- 	width: 30%;
+ 	width: 36%;
  }
  .home-group1_2 li {
  	float: left;
